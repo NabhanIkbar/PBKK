@@ -1,0 +1,954 @@
+{
+	"info": {
+		"_postman_id": "34b73b9d-76a7-4cd0-811c-9864615928b2",
+		"name": "Perpustakaan Digital",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "42997087"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get User",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "{{base_url}}/api/user/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get User by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}/api/user/01jwd3z85bw6mnyqq2j0ctx6k2"
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Nabhan",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "nabhan@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{base_url}}/api/user"
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"NabhanIkbar\",\r\n  \"email\": \"ikbar@gmail.com\",\r\n  \"password\": \"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/api/user/01JWD3WEER7E1H1T6F840NX1WK"
+					},
+					"response": []
+				},
+				{
+					"name": "Hapus User",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "{{base_url}}/api/user/01JWD3WEER7E1H1T6F840NX1WK"
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": {
+					"token": "XrtjI6JVTw33aImZ85UuV2TUZS2MiDfDidBGqbxw4ba4af0b"
+				}
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Author",
+			"item": [
+				{
+					"name": "Get Author",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}/api/author/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Author by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}/api/author/01jwd47zkb2nac84q3gwhacxrm"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Author",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Nabhan",
+									"type": "text"
+								},
+								{
+									"key": "nationality",
+									"value": "Korean",
+									"type": "text"
+								},
+								{
+									"key": "birthdate",
+									"value": "2004-11-19",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{base_url}}/api/author"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Author",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nationality\": \"Indoensian\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/api/author/01jwd47zkb2nac84q3gwhacxrm"
+					},
+					"response": []
+				},
+				{
+					"name": "Hapus Author",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "{{base_url}}/api/author/01jwd47zkb2nac84q3gwhacxrm"
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": {
+					"token": "XrtjI6JVTw33aImZ85UuV2TUZS2MiDfDidBGqbxw4ba4af0b"
+				}
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "Get Book",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "{{base_url}}/api/book/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Book by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}/api/book/01jwd4ytz6fjeav8srf1d5vepz"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Book",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Belajar Bahasa Korea",
+									"type": "text"
+								},
+								{
+									"key": "isbn",
+									"value": "237856576",
+									"type": "text"
+								},
+								{
+									"key": "publisher",
+									"value": "2018-10-07",
+									"type": "text"
+								},
+								{
+									"key": "year_published",
+									"value": "2020",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "100",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{base_url}}/api/book"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Book",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"stock\": \"5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/api/book/01jwd4ytz6fjeav8srf1d5vepz"
+					},
+					"response": []
+				},
+				{
+					"name": "Hapus Book",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "{{base_url}}/api/book/01jwd4ytz6fjeav8srf1d5vepz"
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": {
+					"token": "XrtjI6JVTw33aImZ85UuV2TUZS2MiDfDidBGqbxw4ba4af0b"
+				}
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Loan",
+			"item": [
+				{
+					"name": "Get Loan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}/api/loan/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Loan by Id",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "{{base_url}}/api/loan/01jwd6jmkcknhtxzk5natjgjza"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Loan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "01jwd3z85bw6mnyqq2j0ctx6k2",
+									"type": "text"
+								},
+								{
+									"key": "book_id",
+									"value": "01jwd6j7neqvrce86dwxb702r6",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{base_url}}/api/loan"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Loan",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Nabhan\",\r\n  \"email\": \"nabhan@gmail.com\",\r\n  \"username\": \"nabhan19\",\r\n  \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/api/loan/01jvkp39f5p9kej9tg0gvd4aj5"
+					},
+					"response": []
+				},
+				{
+					"name": "Hapus Loan",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "{{base_url}}/api/loan/01jt52g7xcp330fr28p3asc5jr"
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": {
+					"token": "XrtjI6JVTw33aImZ85UuV2TUZS2MiDfDidBGqbxw4ba4af0b"
+				}
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Book Author",
+			"item": [
+				{
+					"name": "Get Book Author",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "{{base_url}}/api/book-autohor/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Book Author by Id",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "{{base_url}}/api/book-autohor/01jvkp39f5p9kej9tg0gvd4aj5"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Book Author",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "book_id",
+									"value": "01jwd6j7neqvrce86dwxb702r6",
+									"type": "text"
+								},
+								{
+									"key": "author_id",
+									"value": "01jwd6w8rvem6qtw0pqyf8qetm",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{base_url}}/api/book-autohor/"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Book Author",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Nabhan\",\r\n  \"email\": \"nabhan@gmail.com\",\r\n  \"username\": \"nabhan19\",\r\n  \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/api/book-autohor/01jvkp39f5p9kej9tg0gvd4aj5"
+					},
+					"response": []
+				},
+				{
+					"name": "Hapus Book Author",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "{{base_url}}/api/book-autohor/01jt52g7xcp330fr28p3asc5jr"
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": {
+					"token": "XrtjI6JVTw33aImZ85UuV2TUZS2MiDfDidBGqbxw4ba4af0b"
+				}
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Get Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "nabhan@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{base_url}}/api/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "{{base_url}}/api/logout"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://127.0.0.1:8000",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "UY8pd47vBiT5UG0WyV5QeKUKWAL6u8teaYdQ0t6jf5a7850a",
+			"type": "string"
+		}
+	]
+}
